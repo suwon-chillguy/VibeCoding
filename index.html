@@ -15,7 +15,7 @@
       color: #333;
     }
     .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-    h1, h2 { color: #333; display: flex; align-items: center; gap: 15px; }
+    h1, h2 { color: #333; }
     .card { 
       background: rgba(255, 255, 255, 0.85); 
       padding: 20px; 
@@ -24,8 +24,12 @@
       margin-bottom: 20px; 
       backdrop-filter: blur(4px);
     }
-    ul { padding-left: 20px; }
-    li { color: #444; }
+    .profile-section {
+      display: flex; 
+      align-items: center; 
+      gap: 20px; 
+      flex-wrap: wrap;
+    }
     .profile-img {
       width: 200px; 
       height: auto; 
@@ -33,16 +37,25 @@
       border: 3px solid #fff;
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
+    .profile-text {
+      flex: 1;
+      font-size: 1.1rem;
+    }
+    ul { padding-left: 20px; }
+    li { color: #444; }
   </style>
 </head>
 <body>
   <div class="container">
     <header class="card">
-      <h1>
+      <h1>자유주제 프로젝트</h1>
+      <div class="profile-section">
         <img class="profile-img" src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-e644-622f-bea6-53724c66a8de/raw?se=2025-08-12T08%3A51%3A36Z&sp=r&sv=2024-08-04&sr=b&scid=7a06e62d-03cf-5115-ac2a-26f184eda319&skoid=24a7dec3-38fc-4904-b888-8abe0855c442&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-11T19%3A06%3A46Z&ske=2025-08-12T19%3A06%3A46Z&sks=b&skv=2024-08-04&sig=e2G1Qjrfrl//8G4lM6yot7czC%2BsTygyS%2BoOSVs%2BRPk4%3D" alt="오상훈 이미지" />
-        자유주제 프로젝트 : 오상훈(sh118.oh)
-      </h1>
-      <p>ChatGPT를 통해 VibeCoding으로 본 웹페이지를 만들었습니다.</p>
+        <div class="profile-text">
+          <strong>오상훈(sh118.oh)</strong>
+          <p>ChatGPT를 통해 VibeCoding으로 본 웹페이지를 만들었습니다.</p>
+        </div>
+      </div>
     </header>
 
     <section class="card">
