@@ -11,12 +11,11 @@
       line-height: 1.6; 
       margin: 0; 
       padding: 0; 
-      /* 세련된 그라디언트 배경 */
       background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
       color: #fff;
     }
     .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-    h1, h2 { color: #fff; }
+    h1, h2 { color: #fff; display: flex; align-items: center; gap: 10px; }
     .card { 
       background: rgba(255, 255, 255, 0.1); 
       padding: 20px; 
@@ -27,12 +26,22 @@
     }
     ul { padding-left: 20px; }
     li { color: #f1f1f1; }
+    .profile-img {
+      width: 40px; 
+      height: 40px; 
+      border-radius: 50%; 
+      object-fit: cover;
+      border: 2px solid #fff;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header class="card">
-      <h1>자유주제 프로젝트 : 오상훈(sh118.oh)</h1>
+      <h1>
+        <img class="profile-img" src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-e644-622f-bea6-53724c66a8de/raw?se=2025-08-12T08%3A51%3A36Z&sp=r&sv=2024-08-04&sr=b&scid=7a06e62d-03cf-5115-ac2a-26f184eda319&skoid=24a7dec3-38fc-4904-b888-8abe0855c442&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-11T19%3A06%3A46Z&ske=2025-08-12T19%3A06%3A46Z&sks=b&skv=2024-08-04&sig=e2G1Qjrfrl//8G4lM6yot7czC%2BsTygyS%2BoOSVs%2BRPk4%3D" alt="오상훈 이미지" />
+        자유주제 프로젝트 : 오상훈(sh118.oh)
+      </h1>
       <p>ChatGPT를 통해 VibeCoding으로 본 웹페이지를 만들었습니다.</p>
     </header>
 
