@@ -3,126 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI 교육 리뷰 - 마케팅 직군 (2일)</title>
-  <meta name="description" content="HTML 파일 하나로 만드는 심플한 개인 랜딩 페이지" />
-  <!-- Open Graph (공유 미리보기용) -->
-  <meta property="og:title" content="AI 교육 리뷰 - 마케팅 직군 (2일)" />
-  <meta property="og:description" content="HTML 파일 하나로 만드는 심플한 개인 랜딩 페이지" />
-  <meta property="og:type" content="website" />
+  <title>마케팅 직군 대상 AI 교육 리뷰</title>
+  <meta name="description" content="2일간의 ChatGPT 활용 마케팅 교육 리뷰" />
   <style>
-    /* 시스템 폰트 스택: 설치 없이 깔끔한 타이포그래피 */
-    :root{
-      --bg: #0b1020;
-      --card: #121a33;
-      --text: #e6e9f2;
-      --muted:#b6bed6;
-      --accent:#7c9cff;
-      --accent-2:#9ef1d3;
-      --ring: #3a4c9e;
-      --radius: 18px;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-    }
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Apple SD Gothic Neo, "Malgun Gothic", sans-serif;
-      background: radial-gradient(1200px 800px at 80% -10%, rgba(124,156,255,.25), transparent 60%),
-                  radial-gradient(1000px 600px at -10% 110%, rgba(158,241,211,.18), transparent 60%),
-                  var(--bg);
-      color:var(--text);
-      line-height:1.6;
-    }
-    .container{max-width:900px;margin:0 auto;padding:24px}
-
-    /* 카드 레이아웃 */
-    .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
-      border:1px solid rgba(255,255,255,.08);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      backdrop-filter:saturate(140%) blur(6px);
-    }
-
-    header.hero{display:grid;gap:16px;align-items:center;justify-items:center;text-align:center;padding:48px 24px;margin-top:24px}
-    .avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.2)}
-    h1{font-size:clamp(28px, 4vw, 40px);margin:8px 0 0}
-    .tagline{color:var(--muted);max-width:60ch;margin:0 auto 8px}
-
-    /* 버튼 그룹 */
-    .links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:20px auto;max-width:720px}
-    .btn{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.12);text-decoration:none;color:var(--text);background:linear-gradient(180deg, rgba(124,156,255,.18), rgba(124,156,255,.12));}
-    .btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(124,156,255,.2)}
-    .btn.secondary{background:linear-gradient(180deg, rgba(158,241,211,.18), rgba(158,241,211,.12))}
-
-    /* 콘텐츠 섹션 */
-    section{padding:28px}
-    .grid{display:grid;grid-template-columns:1fr;gap:16px}
-    @media(min-width:800px){.grid{grid-template-columns:1fr 1fr}}
-
-    .section-title{font-size:20px;margin:0 0 10px}
-    p{margin:0 0 10px}
-
-    /* FAQ (details/summary로 JS 없이 토글) */
-    details{border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px 16px}
-    details+details{margin-top:10px}
-    summary{cursor:pointer;font-weight:600}
-    summary::marker{color:var(--accent)}
-
-    /* 푸터 */
-    footer{padding:24px;text-align:center;color:var(--muted)}
-    a{color:var(--accent)}
-    a:hover{color:var(--accent-2)}
-
-    /* 접근성 보조 */
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    body { font-family: sans-serif; line-height: 1.6; background: #f8f9fa; margin: 0; padding: 0; }
+    .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+    h1, h2 { color: #333; }
+    .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
+    ul { padding-left: 20px; }
   </style>
 </head>
 <body>
   <div class="container">
-    <header class="hero card">
-      <!-- 프로필 이미지를 바꾸고 싶다면, 아래 src를 자신의 이미지 경로로 바꾸세요 -->
-      <img class="avatar" src="https://avatars.githubusercontent.com/u/583231?v=4" alt="프로필" />
-      <h1>AI 교육 리뷰 — 마케팅 직군 (2일 과정)</h1>
-      <p class="tagline">ChatGPT를 활용한 실습 중심 교육의 핵심을 정리한 리뷰 페이지입니다.</p>
-      <div class="links">
-        <a class="btn" href="https://github.com/" target="_blank" rel="noopener">🔗 GitHub</a>
-        <a class="bt
+    <header class="card">
+      <h1>자유주제 프로젝트 : 오상훈(sh118.oh)</h1>
+      <p>“ChatGPT를 통해 VibeCoding으로 본 웹페이지를 만들었습니다.</p>
     </header>
 
-    <main class="grid">
-      <section id="about" class="card">
-        <h2 class="section-title">소개</h2>
-        <p>간단한 자기소개를 적어보세요. 관심 분야, 현재 하는 일, 열심히 배우는 것들 등.</p>
-        <p>이 페이지는 <strong>자기소개 + 링크트리</strong> 역할을 겸합니다. 필요하면 버튼을 추가/삭제하세요.</p>
-        <ul>
-          <li>설치 필요 없음 (HTML 단일 파일)</li>
-          <li>반응형 레이아웃 (모바일/데스크톱 자동 대응)</li>
-          <li>JS 없이도 동작 (FAQ는 &lt;details&gt; 사용)</li>
-        </ul>
-      </section>
-
-      <section id="faq" class="card">
-        <h2 class="section-title">FAQ</h2>
-        <details>
-          <summary>이 페이지를 내 도메인에서 쓰고 싶어요</summary>
-          <p>GitHub Pages에서 커스텀 도메인을 연결하세요. 저장소의 <em>Settings → Pages</em>에서 도메인을 설정합니다.</p>
-        </details>
-        <details>
-          <summary>색상이나 글꼴을 바꾸려면?</summary>
-          <p><code>:root</code>의 CSS 변수를 수정하면 전체 테마가 바뀝니다. 글꼴은 <code>body{ font-family: ... }</code>를 바꾸세요.</p>
-        </details>
-        <details>
-          <summary>이미지/아이콘은 어떻게?</summary>
-          <p>버튼 안의 이모지(예: 🔗, ✉️)를 다른 이모지로 바꾸거나, 공개 이미지 URL을 <code>&lt;img&gt;</code>로 넣어보세요.</p>
-        </details>
-      </section>
-    </main>
-
-    <footer>
-      © <span id="year">2025</span> Your Name — <a href="#">맨 위로</a>
-    </footer>
+    <section class="card">
+      <h2>[1일차]</h2>
+      <ul>
+        <li>ChatGPT로 이미지 생성</li>
+        <li>문서요약 / 검색</li>
+      </ul>
+    </section>
   </div>
-
-  <!-- JS 없이도 동작하지만, 연도 자동 갱신을 원한다면 아래 한 줄만 유지하세요. 원치 않으면 삭제! -->
-  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
 </body>
 </html>
